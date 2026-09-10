@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +15,115 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 <body>
     <header>
-
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img class="img-logo" src="/img/logo.png" alt="logo de la marca" />
+          <a class="navbar-brand" href="index.html"><strong>La Parrilla De Julian</strong></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="promociones.html"
+                  >Promociones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
+        <h2>Datos de Establecimiento</h2>
+        <ul>
+            <li>Direccion:</li>
+            <li>Telefono:</li>
+            <li>Correo:</li>
+            <li>Horario:</li>
+        </ul>
+
+        <h2>Redes Sociales</h2>
+        <a href="https://www.instagram.com/laparrilladejulian_/?hl=es" "><img  src="/img/ig.png" style="width: 50px;" alt=""></a>
+        <a href="https://www.facebook.com/LaParrillaDeJulian/"><img  src="/img/facebook.png" style="width: 50px;" alt=""></a>
+        <a href="https://maps.app.goo.gl/LnejRZghDma6aWxb9"><img  src="/img/maps.png" style="width: 50px;" alt=""></a>
+        <a href="https://wa.me/3144495049"><img  src="/img/Whatsapp.png" style="width: 50px;" alt=""></a>
+
+
+        <h2>Contactanos</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Correo Electronico</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="3000000000">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Motivo</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="consulta, queja, etc">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+
 
     </main>
     <footer>
