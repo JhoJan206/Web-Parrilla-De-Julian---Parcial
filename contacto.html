@@ -10,6 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -19,8 +20,8 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
           <img class="img-logo" src="/img/logo.png" alt="logo de la marca" />
           <a class="navbar-brand" href="index.html"><strong>La Parrilla De Julian</strong></a>
           <button
@@ -59,76 +60,90 @@
                   >Contacto</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+              </ul>
+            
           </div>
         </div>
       </nav>
     </header>
-    <main>
-        <h2>Datos de Establecimiento</h2>
+    <main class="py-5">
+        <h2>Datos del Establecimiento</h2>
         <ul>
-            <li>Direccion:</li>
-            <li>Telefono:</li>
-            <li>Correo:</li>
-            <li>Horario:</li>
+            <li>Dirección: Cl. 17 # 18-28</li>
+            <li>Teléfono: 314 449 5049</li>
+            <li>Correo: contacto@laparrilladejulian.com</li>
+            <li>Horario: Lunes a domingo · 12:00 p. m. - 10:00 p. m.</li>
         </ul>
 
         <h2>Redes Sociales</h2>
-        <a href="https://www.instagram.com/laparrilladejulian_/?hl=es" "><img  src="/img/ig.png" style="width: 50px;" alt=""></a>
+        <a href="https://www.instagram.com/laparrilladejulian_/?hl=es"><img src="/img/ig.png" style="width: 50px;" alt="Instagram"></a>
         <a href="https://www.facebook.com/LaParrillaDeJulian/"><img  src="/img/facebook.png" style="width: 50px;" alt=""></a>
         <a href="https://maps.app.goo.gl/LnejRZghDma6aWxb9"><img  src="/img/maps.png" style="width: 50px;" alt=""></a>
         <a href="https://wa.me/3144495049"><img  src="/img/Whatsapp.png" style="width: 50px;" alt=""></a>
 
 
         <h2>Contactanos</h2>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Correo Electronico</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="3000000000">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Motivo</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="consulta, queja, etc">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+        <form class="container" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Juan Pérez">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="3000000000">
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo</label>
+                <select class="form-select" id="motivo">
+                    <option selected>Elige un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="reserva">Reserva</option>
+                    <option value="promocion">Reclamar promoción</option>
+                    <option value="queja">Queja o sugerencia</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Enviar</button>
+        </form>
 
 
 
     </main>
-    <footer>
-        
-    </footer>
+    <footer class="footer">
+        <div class="container py-4">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h5>La Parrilla De Julián</h5>
+              <p class="mb-0">Carnes asadas al carbón, con la sazón del barrio.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h5>Contacto</h5>
+              <p class="mb-0">Cl. 17 # 18-28</p>
+              <p class="mb-0">314 449 5049</p>
+              <p class="mb-0">contacto@laparrilladejulian.com</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h5>Síguenos</h5>
+              <div class="d-flex gap-2">
+                <a href="https://www.instagram.com/laparrilladejulian_/?hl=es"><img src="/img/ig.png" style="width: 40px;" alt="Instagram"></a>
+                <a href="https://www.facebook.com/LaParrillaDeJulian/"><img src="/img/facebook.png" style="width: 40px;" alt="Facebook"></a>
+                <a href="https://maps.app.goo.gl/LnejRZghDma6aWxb9"><img src="/img/maps.png" style="width: 40px;" alt="Ubicación"></a>
+                <a href="https://wa.me/3144495049"><img src="/img/Whatsapp.png" style="width: 40px;" alt="WhatsApp"></a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-3 mt-3 border-top">
+            <p class="mb-0 small">© 2026 La Parrilla De Julián · Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
     
 </body>
 </html>

@@ -10,6 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -19,8 +20,8 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
           <img class="img-logo" src="/img/logo.png" alt="logo de la marca" />
           <a class="navbar-brand" href="index.html"><strong>La Parrilla De Julian</strong></a>
           <button
@@ -59,97 +60,60 @@
                   >Contacto</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+              </ul>
+            
           </div>
         </div>
       </nav>
     </header>
-    <main>
-      <div class="alert alert-success" role="alert">
+    <main class="py-5">
+      <div class="alert alert-warning" role="alert">
         
-        <h4 class="alert-heading"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-discount"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-2.5 9.66a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3m1.207 -4.707a1 1 0 0 0 -1.414 0l-6 6a1 1 0 0 0 1.414 1.414l6 -6a1 1 0 0 0 0 -1.414m-6.207 -.293a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3" /></svg>Well done!</h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <h4 class="alert-heading"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-discount"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-2.5 9.66a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3m1.207 -4.707a1 1 0 0 0 -1.414 0l-6 6a1 1 0 0 0 1.414 1.414l6 -6a1 1 0 0 0 0 -1.414m-6.207 -.293a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3" /></svg>Promoción destacada</h4>
+        <p>Picada mixta 2x1 todos los martes y 30% de descuento en cortes de carne entre semana.</p>
         <hr>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        <p class="mb-0">Válido durante esta semana. Reclama tu promoción antes de que se agote.</p>
         <a href="contacto.html">Reclama tu promocion</a>
       </div>
 
       <h2>Promociones</h2>
         <div class="container text-center">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-            <div class="col">
-              <div class="card h-100 mb-1">
-                <img src="..." class="card-img-top" alt="..." />
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card h-100 mb-1 position-relative">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-2">-20%</span>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Punta de anca</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
+                    350 g a término medio con guarnición incluida.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="contacto.html" class="btn btn-outline-dark">Reclamar</a>
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card h-100 mb-1">
-                <img src="..." class="card-img-top" alt="..." />
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card h-100 mb-1 position-relative">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-2">2x1</span>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Picada mixta</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
+                    Todos los martes, dos picadas al precio de una.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="contacto.html" class="btn btn-outline-dark">Reclamar</a>
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="card h-100 mb-1">
-                <img src="..." class="card-img-top" alt="..." />
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card h-100 mb-1 position-relative">
+                <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-2">-30%</span>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Combo parrillero doble</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
+                    Dos cortes de carne, dos acompañamientos y bebida.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100 mb-1">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="contacto.html" class="btn btn-outline-dark">Reclamar</a>
                 </div>
               </div>
             </div>
@@ -157,9 +121,34 @@
         </div>
 
     </main>
-    <footer>
-        
-    </footer>
+    <footer class="footer">
+        <div class="container py-4">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h5>La Parrilla De Julián</h5>
+              <p class="mb-0">Carnes asadas al carbón, con la sazón del barrio.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h5>Contacto</h5>
+              <p class="mb-0">Cl. 17 # 18-28</p>
+              <p class="mb-0">314 449 5049</p>
+              <p class="mb-0">contacto@laparrilladejulian.com</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <h5>Síguenos</h5>
+              <div class="d-flex gap-2">
+                <a href="https://www.instagram.com/laparrilladejulian_/?hl=es"><img src="/img/ig.png" style="width: 40px;" alt="Instagram"></a>
+                <a href="https://www.facebook.com/LaParrillaDeJulian/"><img src="/img/facebook.png" style="width: 40px;" alt="Facebook"></a>
+                <a href="https://maps.app.goo.gl/LnejRZghDma6aWxb9"><img src="/img/maps.png" style="width: 40px;" alt="Ubicación"></a>
+                <a href="https://wa.me/3144495049"><img src="/img/Whatsapp.png" style="width: 40px;" alt="WhatsApp"></a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-3 mt-3 border-top">
+            <p class="mb-0 small">© 2026 La Parrilla De Julián · Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
     
 </body>
 </html>

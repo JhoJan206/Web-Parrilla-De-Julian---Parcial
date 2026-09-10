@@ -16,8 +16,8 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
           <img class="img-logo" src="/img/logo.png" alt="logo de la marca" />
           <a class="navbar-brand" href="index.html"> <strong>La Parrilla De Julian</strong></a>
           <button
@@ -56,51 +56,31 @@
                   >Contacto</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+              </ul>
+            
           </div>
         </div>
       </nav>
   </header>
-  <main>
+  <main class="py-5">
 
     <div class="container text-center">
       <h1 class="text-center mb-5">Nuestro Menú</h1>
 
       <!-- Carnes  -->
       <h3 class="category-titlle">Carnes a la parrilla</h3>
-      <div class="row row-cols-2 justify-content-center">
+      <div class="row row-cols-2 justify-content-center" >
         <div class="col-12 col-sm-6 col-lg-3">
           
           <div class="card card-producto h-100">
             <div class="d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-              <i class="bi bi-fire"></i>
+              <i class="bi bi-fire"><img src="" alt=""></i>
             </div>
             <div class="card-body">
               <h5 class="card-title">Carne fresca</h5>
               <p class="card-text small">Acompañadas de yuca y papa al vapor con cebollas y ají</p>
               <span class="mt-auto">$41.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -114,7 +94,7 @@
               <h5 class="card-title">Sobrebarriga</h5>
               <p class="card-text small">De la casa con pepitoria</p>
               <span class="mt-auto">$52.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -136,7 +116,7 @@
               <h5 class="card-title">Triple carne</h5>
               <p class="card-text small">Con papas</p>
               <span class="mt-auto">$40.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
 
           </div>
@@ -151,7 +131,7 @@
               <h5 class="card-title">Hot dog</h5>
               <p class="card-text small">Con salsa de la casa</p>
               <span class="mt-auto">$35.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -173,7 +153,7 @@
               <h5 class="card-title">Picada mixta para compartir</h5>
               <p class="card-text small">Chicharron, carne asada, chorizo, papa criolla y arepa</p>
               <span class="mt-auto">$65.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -187,7 +167,7 @@
               <h5 class="card-title">Combo parrillero doble</h5>
               <p class="card-text small">Dos cortes de carne, dos acompañamientos y bebida incluida</p>
               <span class="mt-auto">$48.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -211,7 +191,7 @@
               <h5 class="card-title">Papas a la francesa</h5>
               <p class="card-text small">Porción de papas crocantes servidas con salsa de la casa</p>
               <span class="mt-auto">$9.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -225,7 +205,7 @@
               <h5 class="card-title">Limonada de coco</h5>
               <p class="card-text small">Bebida refrescante preparada al momento con coco natural</p>
               <span class="mt-auto">$9.000</span>
-              <button type="button" class="btn btn-primary">Agregar</button>
+              <button type="button" class="btn btn-outline-dark">Agregar</button>
             </div>
           </div>
         </div>
@@ -236,8 +216,33 @@
 
 
   </main>
-  <footer>
-
+  <footer class="footer">
+    <div class="container py-4">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h5>La Parrilla De Julián</h5>
+          <p class="mb-0">Carnes asadas al carbón, con la sazón del barrio.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h5>Contacto</h5>
+          <p class="mb-0">Cl. 17 # 18-28</p>
+          <p class="mb-0">314 449 5049</p>
+          <p class="mb-0">contacto@laparrilladejulian.com</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h5>Síguenos</h5>
+          <div class="d-flex gap-2">
+            <a href="https://www.instagram.com/laparrilladejulian_/?hl=es"><img src="/img/ig.png" style="width: 40px;" alt="Instagram"></a>
+            <a href="https://www.facebook.com/LaParrillaDeJulian/"><img src="/img/facebook.png" style="width: 40px;" alt="Facebook"></a>
+            <a href="https://maps.app.goo.gl/LnejRZghDma6aWxb9"><img src="/img/maps.png" style="width: 40px;" alt="Ubicación"></a>
+            <a href="https://wa.me/3144495049"><img src="/img/Whatsapp.png" style="width: 40px;" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-3 mt-3 border-top">
+        <p class="mb-0 small">© 2026 La Parrilla De Julián · Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
 
 </body>
