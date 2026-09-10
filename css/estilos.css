@@ -67,3 +67,9 @@ header{
     color: var(--humo);
     text-decoration: none;
 }
+.imagenMenu{
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 2px;
+}
